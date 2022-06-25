@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32sp"
+        android:layout_marginTop="139dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/rectangle_copy_4" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="2dp">
+
+        <TextView
+            android:id="@+id/headerEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="138dp"
+            android:background="@drawable/heading"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/introduceEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerEditText"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/lets_introduce" />
+
+        <ImageView
+            android:id="@+id/textIcon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/introduceEditText"
+
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_text_icon"
+            android:contentDescription="@string/edit_text_icon" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/introduceEditText"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/textIcon1"
+            android:hint="@string/your_full_name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/secondary" />
+
+        <ImageView
+            android:id="@+id/textIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textIcon1"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_text_icon"
+            android:contentDescription="@string/edit_text_icon" />
+
+        <EditText
+
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEditText"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/textIcon2"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/secondary"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backButton"
+            android:layout_width="58dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/usernameEditText"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/back_button"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextButton"
+            android:layout_width="245dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/usernameEditText"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/backButton"
+            android:background="@drawable/next_button"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

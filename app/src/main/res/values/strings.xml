@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TBC_Course_5</string>
+    <string name="username">Username</string>
+    <string name="your_full_name">Your Full Name</string>
+    <string name="logo">logo</string>
+    <string name="edit_text_icon">editTextIcon</string>
+</resources>
